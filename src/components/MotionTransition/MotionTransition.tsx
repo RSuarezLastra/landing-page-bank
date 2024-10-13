@@ -5,20 +5,20 @@ import { fadeIn } from "@/utils/transitions";
 
 
 export function MotionTransition(props: MotionTransitionProps) {
-	const { children, className } = props
+	const { children, className } = props;
 
-	const ref = useRef(null)
-	const isInView = useInView(ref, { once: false })
-	const mainControls = useAnimation()
-	const slideControls = useAnimation()
+	const ref = useRef(null);
+	const isInview = useInView(ref, { once: false });
+	const mainControls = useAnimation();
+	const slideControls = useAnimation();
 
 	useEffect(() => {
-		if (isInView) {
-			mainControls.start("visible")
-			slideControls.start("visible")
+
+		if (isInview) {
+			mainControls.start("visible");
+			slideControls.start("visiblw");
 		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [isInView])
+	}, [isInview])
 
 
 	return (

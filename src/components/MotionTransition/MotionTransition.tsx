@@ -16,7 +16,7 @@ export function MotionTransition(props: MotionTransitionProps) {
 
 		if (isInview) {
 			mainControls.start("visible");
-			slideControls.start("visiblw");
+			slideControls.start("visible");
 		}
 	}, [isInview])
 

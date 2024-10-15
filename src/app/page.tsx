@@ -1,3 +1,4 @@
+import { CounterData } from "@/components/CounterData";
 import { FirstBlock } from "@/components/FirstBlock";
 import { Header } from "@/components/Header";
 import Image from "next/image";
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Header />
       <FirstBlock />
+      <CounterData />
     </>
   );
 }

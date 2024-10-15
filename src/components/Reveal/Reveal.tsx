@@ -1,12 +1,12 @@
 "use client";
 
-import { useAnimation, motion } from "framer-motion";
+import { useAnimation, motion, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 export function Reveal({ children }: { children: React.ReactNode }) {
 
   const ref = useRef(null);
-  const isInView = useAnimation();
+  const isInView = useInView(ref, { once: false });
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 
@@ -20,21 +20,23 @@ export function Reveal({ children }: { children: React.ReactNode }) {
 
   return (
     <div ref={ref} className="relative overflow-hidden w-fit">
-      <motion.div variants={{
-        hidden: { opacity: 0, y: 75 },
-        visible: { opacity: 1, y: 0 }
-      }}
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 }
+        }}
         initial='hidden'
         animate={mainControls}
         exit='hidden'
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.3, delay: 0.5 }}
       >
         {children}
       </motion.div>
-      <motion.div variants={{
-        hidden: { left: 0 },
-        visible: { left: '100%' }
-      }}
+      <motion.div
+        variants={{
+          hidden: { left: 0 },
+          visible: { left: '100%' }
+        }}
         initial='hidden'
         animate={slideControls}
         transition={{ duration: 0.5, ease: 'easeIn' }}
@@ -48,7 +50,7 @@ export function Reveal({ children }: { children: React.ReactNode }) {
           zIndex: 20
         }}
       >
-        {children}
+
       </motion.div>
     </div>
   )

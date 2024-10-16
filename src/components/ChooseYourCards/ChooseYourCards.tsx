@@ -20,7 +20,7 @@ export function ChooseYourCards() {
         <Reveal>
           <h2 className="text-5xl font-semibold">Elige la tarjeta que más
             <span className="block degradedBlue bg-blueLight">se adapta a tus necesidades</span>
-          </h2>
+          </h2> 
         </Reveal>
         <div className="px-14">
           <MotionTransition>

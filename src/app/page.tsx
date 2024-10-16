@@ -3,6 +3,7 @@ import { FirstBlock } from "@/components/FirstBlock";
 import { Header } from "@/components/Header";
 import { BestBusiness } from "@/components/BestBusiness";
 import { ChooseYourCards } from "@/components/ChooseYourCards";
+import { ControlBilling } from "@/components/ControlBilling";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <CounterData />
       <BestBusiness/>
       <ChooseYourCards/>
+      <ControlBilling/>
     </>
   );
 }

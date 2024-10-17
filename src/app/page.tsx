@@ -5,6 +5,7 @@ import { BestBusiness } from "@/components/BestBusiness";
 import { ChooseYourCards } from "@/components/ChooseYourCards";
 import { ControlBilling } from "@/components/ControlBilling";
 import Image from "next/image";
+import { Testimonials } from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <BestBusiness/>
       <ChooseYourCards/>
       <ControlBilling/>
+      <Testimonials/>
     </>
   );
 }

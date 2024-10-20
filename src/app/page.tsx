@@ -4,8 +4,9 @@ import { Header } from "@/components/Header";
 import { BestBusiness } from "@/components/BestBusiness";
 import { ChooseYourCards } from "@/components/ChooseYourCards";
 import { ControlBilling } from "@/components/ControlBilling";
-import Image from "next/image";
 import { Testimonials } from "@/components/Testimonials";
+import { PaymentMethods } from "@/components/PaymentMethods";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <ChooseYourCards/>
       <ControlBilling/>
       <Testimonials/>
+      <PaymentMethods/>
     </>
   );
 }

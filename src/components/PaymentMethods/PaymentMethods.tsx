@@ -5,6 +5,7 @@ import { BackgroundRadialRight } from '../BackgroundRadialRight';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { dataPaymentMethods } from './PaymentMethods.data';
 import Image from 'next/image';
+import { CtaDark } from '../CtaDark';
 
 export function PaymentMethods() {
   return (
@@ -37,6 +38,7 @@ export function PaymentMethods() {
           </div>
         </Swiper>
       </div>
+      <CtaDark/>
     </div>
   )
 }

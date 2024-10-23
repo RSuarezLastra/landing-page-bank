@@ -6,6 +6,7 @@ import { ChooseYourCards } from "@/components/ChooseYourCards";
 import { ControlBilling } from "@/components/ControlBilling";
 import { Testimonials } from "@/components/Testimonials";
 import { PaymentMethods } from "@/components/PaymentMethods";
+import { Footer } from "@/components/Footer";
 import Image from "next/image";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <ControlBilling/>
       <Testimonials/>
       <PaymentMethods/>
+      <Footer/>
     </>
   );
 }
